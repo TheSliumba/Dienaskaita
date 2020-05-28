@@ -17,7 +17,14 @@
     <p>Čionais prašyčiau nurodykite savo mood skalėje nuo 1 iki 100</p>
     <input type="range" min="1" max="100" value="50" class="slider" id="dayScore">
     <p>Tai padavei: <span id="dayValue"></span></p>
-    <p id="sampletext">This is my sample text boiii</p>
+    <p id="sampletext_ok">Normal text block</p>
+    <p id="sampletext_bad">Bad Text block</p>
+    <p id="sampletext_good">Good text block</p>
+</div>
+<div class="textomiser">
+    <h2>Nu čia toks tipo mygtukas bus, jį paspaudus norėčiau, kad išmestų, ką veikti tą dieną</h2>
+    <button class="randomiser" type="button" onclick="randomise_text()">What to do today?</button>
+    <p>Taigi, šiandienos veiklos loterijoje laimi: <span id="doables"></span></p>
 </div>
 <script src="skriptas.js"> </script>
 </body>
