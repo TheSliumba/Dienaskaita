@@ -14,7 +14,7 @@ slider.oninput = function() {
     document.getElementById("sampletext").style.color = "cornflowerblue"
   }
 }
-//Trying to put in current date into text so i donthave to change manually
+//Trying to put in current date into text so I don't have to change manually
 var today = new Date()
 var weekdays = ["sekmadienį", "pirmadienį", "antradienį", "trečiadienį", "ketvirtadienį", "penktadienį", "šeštadienį"]
 document.getElementById("today").innerHTML = weekdays[today.getDay()]
