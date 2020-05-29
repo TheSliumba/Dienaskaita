@@ -32,8 +32,9 @@ document.getElementById("today").innerHTML = weekdays[today.getDay()]
 //So now Imma try to make a button press dish out a (hopefully) random string in index
 //To start, I need to figure out how to make the submit action activate the script to print
 function randomise_text(){
-  var possibilities = ["Pavalgyt", "Parašyt", "Pakodint kokią valandžikę",
-  "Pageimint", "Prasieit rajone", "Paiskrapštyt prie mašinos", "Paieškot pen-pal'ų"]
+  var possibilities = ["Pavalgyt skaniai", "Parašyt kų tais toke lengvai", "Pakodint kokią valandžikę",
+  "Pageimint", "Prasieit rajone", "Pasikrapštyt prie mašinos", "Paieškot pen-pal'ų",
+  "Pridėt dar kokį elementą prie skripto", "Sugalvot, kur applyint į darbą"]
   var choice = Math.floor(Math.random() * possibilities.length)
   document.getElementById("doables").innerHTML = possibilities[choice]
 }
