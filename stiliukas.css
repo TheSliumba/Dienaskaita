@@ -4,14 +4,20 @@ body {
 div > #sampletext_ok {
     display: block;
     color: rgb(28, 124, 124);
+    font-size: large;
+    font-weight: 800;
 }
 div > #sampletext_bad {
     display: none;
     color: rgba(175, 60, 60, 0.89);
+    font-size: large;
+    font-weight: 800;
 }
 div > #sampletext_good {
     display: none;
     color: rgb(66, 99, 66);
+    font-size: large;
+    font-weight: 800;
 }
 article {
     margin: 2px;
@@ -29,6 +35,28 @@ article {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-style: oblique; 
+}
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80%;
+    height: 15px;
+    outline: none;
+    background-color: rgb(35, 68, 78);
+    opacity: 0.8;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.slider:hover {
+    opacity: 1;
+}
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: rgb(15, 129, 163);
+    cursor: pointer;
 }
 .textomiser {
     margin: 2px;
